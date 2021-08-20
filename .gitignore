@@ -122,3 +122,16 @@ dist
 .pnp.*
 
 
+### https://raw.github.com/github/gitignore/991e760c1c6d50fdda246e0178b9c58b06770b90/Global/VisualStudioCode.gitignore
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+
