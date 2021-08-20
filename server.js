@@ -7,9 +7,9 @@ const app = express();
 app.use(cors());
 app.use('/public', express.static(process.cwd() + '/public'));
 
-app.get('/', function (req, res) {
-  res.sendFile(process.cwd() + '/views/index.html');
-});
+const indexRouter = require('./routes/index.route');
+
+app.use('/', indexRouter);
 
 const port = process.env.PORT || 3000;
 app.listen(port, function () {
